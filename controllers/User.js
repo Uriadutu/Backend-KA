@@ -11,8 +11,8 @@ export const getUsers = async (req, res) => {
 };
 
 export const getUserById = async (req, res) => {
-  try {
-    const user = await User.findOne({
+  try {   
+    const user = await by User.findOne({
       where: {
         id: req.params.id,
       },
